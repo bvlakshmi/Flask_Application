@@ -4,6 +4,7 @@ app.app_context().push()
 from flaskblog.models import User,Post
 print(User.query.all())
 user=User.query.first()
+print(user.query.all())
 print(user)
 print(user.password)
 print(Post.query.all())
